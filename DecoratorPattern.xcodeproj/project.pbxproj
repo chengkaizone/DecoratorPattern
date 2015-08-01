@@ -14,6 +14,9 @@
 		10DBED7A1B6C3A8F00E0EB58 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10DBED791B6C3A8F00E0EB58 /* Images.xcassets */; };
 		10DBED7D1B6C3A8F00E0EB58 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10DBED7B1B6C3A8F00E0EB58 /* LaunchScreen.xib */; };
 		10DBED891B6C3A9000E0EB58 /* DecoratorPatternTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DBED881B6C3A9000E0EB58 /* DecoratorPatternTests.m */; };
+		10DBED941B6C3B2900E0EB58 /* GamePlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DBED931B6C3B2900E0EB58 /* GamePlay.m */; };
+		10DBED971B6C3C9300E0EB58 /* DecoratorGamePlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DBED961B6C3C9300E0EB58 /* DecoratorGamePlay.m */; };
+		10DBED9A1B6C3F2500E0EB58 /* GamePlay+MoreCommond.m in Sources */ = {isa = PBXBuildFile; fileRef = 10DBED991B6C3F2500E0EB58 /* GamePlay+MoreCommond.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		10DBED821B6C3A9000E0EB58 /* DecoratorPatternTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DecoratorPatternTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10DBED871B6C3A9000E0EB58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10DBED881B6C3A9000E0EB58 /* DecoratorPatternTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DecoratorPatternTests.m; sourceTree = "<group>"; };
+		10DBED921B6C3B2900E0EB58 /* GamePlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePlay.h; sourceTree = "<group>"; };
+		10DBED931B6C3B2900E0EB58 /* GamePlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePlay.m; sourceTree = "<group>"; };
+		10DBED951B6C3C9300E0EB58 /* DecoratorGamePlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecoratorGamePlay.h; sourceTree = "<group>"; };
+		10DBED961B6C3C9300E0EB58 /* DecoratorGamePlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecoratorGamePlay.m; sourceTree = "<group>"; };
+		10DBED981B6C3F2500E0EB58 /* GamePlay+MoreCommond.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GamePlay+MoreCommond.h"; sourceTree = "<group>"; };
+		10DBED991B6C3F2500E0EB58 /* GamePlay+MoreCommond.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GamePlay+MoreCommond.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +94,10 @@
 				10DBED711B6C3A8F00E0EB58 /* AppDelegate.m */,
 				10DBED731B6C3A8F00E0EB58 /* ViewController.h */,
 				10DBED741B6C3A8F00E0EB58 /* ViewController.m */,
+				10DBED921B6C3B2900E0EB58 /* GamePlay.h */,
+				10DBED931B6C3B2900E0EB58 /* GamePlay.m */,
+				10DBED9B1B6C40D300E0EB58 /* GamePlayDecorator */,
+				10DBED9C1B6C40F000E0EB58 /* GamePlay+MoreCommond */,
 				10DBED761B6C3A8F00E0EB58 /* Main.storyboard */,
 				10DBED791B6C3A8F00E0EB58 /* Images.xcassets */,
 				10DBED7B1B6C3A8F00E0EB58 /* LaunchScreen.xib */,
@@ -117,6 +130,24 @@
 				10DBED871B6C3A9000E0EB58 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		10DBED9B1B6C40D300E0EB58 /* GamePlayDecorator */ = {
+			isa = PBXGroup;
+			children = (
+				10DBED951B6C3C9300E0EB58 /* DecoratorGamePlay.h */,
+				10DBED961B6C3C9300E0EB58 /* DecoratorGamePlay.m */,
+			);
+			name = GamePlayDecorator;
+			sourceTree = "<group>";
+		};
+		10DBED9C1B6C40F000E0EB58 /* GamePlay+MoreCommond */ = {
+			isa = PBXGroup;
+			children = (
+				10DBED981B6C3F2500E0EB58 /* GamePlay+MoreCommond.h */,
+				10DBED991B6C3F2500E0EB58 /* GamePlay+MoreCommond.m */,
+			);
+			name = "GamePlay+MoreCommond";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,7 +251,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				10DBED751B6C3A8F00E0EB58 /* ViewController.m in Sources */,
+				10DBED941B6C3B2900E0EB58 /* GamePlay.m in Sources */,
+				10DBED971B6C3C9300E0EB58 /* DecoratorGamePlay.m in Sources */,
 				10DBED721B6C3A8F00E0EB58 /* AppDelegate.m in Sources */,
+				10DBED9A1B6C3F2500E0EB58 /* GamePlay+MoreCommond.m in Sources */,
 				10DBED6F1B6C3A8F00E0EB58 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

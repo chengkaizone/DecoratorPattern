@@ -8,6 +8,13 @@
 
 #import "ViewController.h"
 
+// 装饰器对象
+#import "DecoratorGamePlay.h"
+
+// category扩展了对象的行为
+#import "GamePlay.h"
+#import "GamePlay+MoreCommond.h"
+
 @interface ViewController ()
 
 @end
@@ -15,13 +22,16 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    // 装饰器对象
+    DecoratorGamePlay *gamePlayDecorator = [DecoratorGamePlay new];
+    [gamePlayDecorator cheat];
+    
+    // category模拟的装饰器
+    GamePlay *gamePlay = [GamePlay new];
+    [gamePlay cheat];
 }
 
 @end
